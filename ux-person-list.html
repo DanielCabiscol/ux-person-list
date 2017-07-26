@@ -1,0 +1,46 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="bower_components/ux-person/ux-person.html">
+
+<dom-module id="ux-person-list">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    
+    <template is="dom-repeat" items="[[persons]]" as="person">
+          <ux-person person="[[person]]"></ux-person>
+    </template>
+
+  </template>
+
+
+  <script>
+    /**
+     * `ux-person-list`
+     * A list of person cards with information
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UxPersonList extends Polymer.Element {
+      static get is() { return 'ux-person-list'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'ux-person-list'
+          },
+
+          persons: {
+            type: Array
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UxPersonList.is, UxPersonList);
+  </script>
+</dom-module>

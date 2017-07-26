@@ -1,0 +1,17 @@
+{
+  "name": "ux-person-list",
+  "description": "A list of person cards with information",
+  "main": "ux-person-list.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "ux-person": "danielcabiscol/ux-person"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
+  }
+}

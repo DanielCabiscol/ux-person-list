@@ -1,0 +1,61 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="/bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="/bower_components/iron-icons/social-icons.html">
+<link rel="import" href="/bower_components/paper-item/paper-item-body.html">
+
+<dom-module id="ux-person">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+</style>
+
+    <paper-icon-item>
+      <iron-icon icon="social:person" slot="item-icon">
+      </iron-icon>
+      <paper-item-body two-line>
+        <div>[[person.name]] [[person.first-surname]] [[person.second-surname]]</div>
+        <div secondary>Nom i Cognoms</div>
+      </paper-item-body>
+    </paper-icon-item>
+
+    <paper-icon-item>
+      <iron-icon icon="social:cake" slot="item-icon">
+      </iron-icon>
+      <paper-item-body two-line>
+        <div>[[person.birthDate]]</div>
+        <div secondary>Data de Naixement</div>
+      </paper-item-body>
+    </paper-icon-item>
+
+  </template>
+
+  <script>
+    /**
+     * `ux-person`
+     * person card example
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UxPerson extends Polymer.Element {
+      static get is() { return 'ux-person'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'ux-person'
+          },
+
+          person: {
+            type: Object
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UxPerson.is, UxPerson);
+  </script>
+</dom-module>
