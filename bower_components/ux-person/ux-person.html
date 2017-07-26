@@ -2,6 +2,7 @@
 <link rel="import" href="../paper-item/paper-icon-item.html">
 <link rel="import" href="../iron-icons/social-icons.html">
 <link rel="import" href="../iron-icons/communication-icons.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../paper-item/paper-item-body.html">
 
 <dom-module id="ux-person">
@@ -12,16 +13,13 @@
       }
 </style>
 
+  <div role="listbox">
     <paper-icon-item>
       <iron-icon icon="social:person" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
-        <div>[[person.first_name]]</div>
+        <div>[[person.first_name]] [[person.last_name]]</div>
         <div secondary>Nom</div>
-      </paper-item-body>
-      <paper-item-body two-line>
-        <div>[[person.last_name]]</div>
-        <div secondary>Cognom</div>
       </paper-item-body>
     </paper-icon-item>
 
@@ -42,6 +40,7 @@
         <div secondary>email</div>
       </paper-item-body>
     </paper-icon-item>
+  </div>
 
   </template>
 

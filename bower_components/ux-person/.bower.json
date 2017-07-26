@@ -17,13 +17,14 @@
     "polymer": "^2.0.0"
   },
   "homepage": "https://github.com/danielcabiscol/ux-person",
-  "_release": "3cd0bc75d5",
+  "_release": "2353dc41df",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "3cd0bc75d5299bbc53b3b7feb4a5a1aa3adccc1e"
+    "commit": "2353dc41dff34d2406387ccacda6e0c7caadc266"
   },
   "_source": "https://github.com/danielcabiscol/ux-person.git",
   "_target": "*",
-  "_originalSource": "danielcabiscol/ux-person"
+  "_originalSource": "danielcabiscol/ux-person",
+  "_direct": true
 }
