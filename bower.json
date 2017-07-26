@@ -4,7 +4,7 @@
   "main": "ux-person-list.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
-    "ux-person": "https://github.com/DanielCabiscol/ux-person"
+    "ux-person": "danielcabiscol/ux-person"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
