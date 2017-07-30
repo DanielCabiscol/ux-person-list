@@ -1,0 +1,29 @@
+{
+  "name": "ux-dialog",
+  "description": "A little pop-up with some contact actions",
+  "main": "ux-dialog.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "paper-dialog": "PolymerElements/paper-dialog#^2.0.0",
+    "paper-button": "PolymerElements/paper-button#^2.0.0"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
+  },
+  "homepage": "https://github.com/danielcabiscol/ux-dialog",
+  "_release": "290dd4c3bd",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "290dd4c3bdb6db04d65f69bfc3606e2fa469b126"
+  },
+  "_source": "https://github.com/danielcabiscol/ux-dialog.git",
+  "_target": "*",
+  "_originalSource": "danielcabiscol/ux-dialog",
+  "_direct": true
+}

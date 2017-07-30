@@ -1,0 +1,52 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rek="import" href="../paper-dialog/paper-dialog.html">
+<link rek="import" href="../paper-dialog-behavior/paper-dialog-behavior.html">
+<link rek="import" href="../paper-button/paper-button.html">
+
+<dom-module id="ux-dialog">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    
+    <paper-dialog id="animated" entry-animation="scale-up-animation" exit-animation="fade-out-animation" with-backdrop>
+      <h2>Fitxa de [[name]] [[surname]]</h2>
+      <paper-button>Enviar Email</paper-button>
+      <paper-button>Trucar</paper-button>
+    </paper-dialog>
+  </template>
+
+  <script>
+    /**
+     * `ux-dialog`
+     * A little pop-up with some contact actions
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UxDialog extends Polymer.Element {
+      static get is() { return 'ux-dialog'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'ux-dialog'
+          },
+
+          name:{
+            type: String,
+          },
+
+          surname: {
+            type: String
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UxDialog.is, UxDialog);
+  </script>
+</dom-module>

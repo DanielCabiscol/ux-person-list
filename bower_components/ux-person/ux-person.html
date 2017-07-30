@@ -4,6 +4,7 @@
 <link rel="import" href="../iron-icons/communication-icons.html">
 <link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../paper-item/paper-item-body.html">
+<link rel="import" href="../ux-dialog/ux-dialog.html">
 
 <dom-module id="ux-person">
   <template>
@@ -14,16 +15,19 @@
 </style>
 
   <div role="listbox">
-    <paper-icon-item>
+    <paper-icon-item raised onclick="pop.open()">
       <iron-icon icon="social:person" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
         <div>[[person.first_name]] [[person.last_name]]</div>
-        <div secondary>Nom</div>
+        <div secondary>[[person.country]]</div>
       </paper-item-body>
     </paper-icon-item>
+  </div>
+  
+  <ux-dialog id="pop" name="[[person.first_name]]" surname="[[person.last_name]]"></ux-dialog>
 
-    <paper-icon-item>
+    <!--<paper-icon-item>
       <iron-icon icon="icons:flag" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
@@ -40,7 +44,7 @@
         <div secondary>email</div>
       </paper-item-body>
     </paper-icon-item>
-  </div>
+  </div>-->
 
   </template>
 
