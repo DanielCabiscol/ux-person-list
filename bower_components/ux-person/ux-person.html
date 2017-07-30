@@ -4,6 +4,7 @@
 <link rel="import" href="../iron-icons/communication-icons.html">
 <link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../paper-item/paper-item-body.html">
+<link rel="import" href="ux-person-styles.html">
 <link rel="import" href="../ux-dialog/ux-dialog.html">
 
 <dom-module id="ux-person">
@@ -13,13 +14,11 @@
         display: block;
       }
 
-      paper-icon-item{
-        @apply(--contact-card-theme);
-      }
+    
 </style>
 
   <div role="listbox">
-    <paper-icon-item raised onclick="pop.open()">
+    <paper-icon-item raised onclick="pop.open()" class="card" empty>
       <iron-icon icon="social:person" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
@@ -78,5 +77,8 @@
     }
 
     window.customElements.define(UxPerson.is, UxPerson);
-  </script>
+</script>
+
+ <script type="text/javascript" src="ux-person.js"></script>
+
 </dom-module>

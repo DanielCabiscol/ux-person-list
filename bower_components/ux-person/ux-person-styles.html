@@ -1,0 +1,26 @@
+<dom-module id="ux-person-styles">
+    <template>
+        <style>
+            :host {
+                display: block;
+                --primary-color: var(--paper-teal-300);
+                --secondary-color: var(--paper-teal-400);
+                --text-primary-color: var(--paper-teal-900);
+                --text-secondary-color: var(--paper-teal-700);
+            }
+
+            .card{
+                background-color: var(--ux-person-background, var(--primary-color));
+            }
+
+            .card iron-icon{
+                color: var(--ux-person-icon-color, var(--primary-color));
+            }
+
+            .person[empty] paper-item-body{
+                background-color: var(--ux-person-background, var(--secondary-color));
+            }
+            
+        </style>
+    </template>
+</dom-module>
