@@ -16,11 +16,11 @@
     "polymer": "^2.0.0"
   },
   "homepage": "https://github.com/danielcabiscol/ux-dialog",
-  "_release": "9764e4e458",
+  "_release": "2bc96eb86b",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "9764e4e458c23bae0e2b473e4ba16613faee404b"
+    "commit": "2bc96eb86bf9f3047cf3c53d894e3bafd3f8bc96"
   },
   "_source": "https://github.com/danielcabiscol/ux-dialog.git",
   "_target": "*",
